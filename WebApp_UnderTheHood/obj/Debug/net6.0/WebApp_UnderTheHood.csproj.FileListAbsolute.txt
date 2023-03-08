@@ -29,3 +29,5 @@ E:\Estudos\DotNet\Asp.Net Identity\WebApp_Security\WebApp_UnderTheHood\obj\Debug
 E:\Estudos\DotNet\Asp.Net Identity\WebApp_Security\WebApp_UnderTheHood\obj\Debug\net6.0\WebApp_UnderTheHood.pdb
 E:\Estudos\DotNet\Asp.Net Identity\WebApp_Security\WebApp_UnderTheHood\obj\Debug\net6.0\WebApp_UnderTheHood.genruntimeconfig.cache
 E:\Estudos\DotNet\Asp.Net Identity\WebApp_Security\WebApp_UnderTheHood\obj\Debug\net6.0\ref\WebApp_UnderTheHood.dll
+E:\Estudos\DotNet\Asp.Net Identity\WebApp_Security\WebApp_UnderTheHood\bin\Debug\net6.0\Newtonsoft.Json.dll
+E:\Estudos\DotNet\Asp.Net Identity\WebApp_Security\WebApp_UnderTheHood\obj\Debug\net6.0\WebApp_UnderTheHood.csproj.CopyComplete

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tBfjbDFUOMjkuUMM5ku6t1ldd+aLn6mxEk1lMP3XgZELerDxVqXVbZNWNgwh5S1XtOJyzcWbRaMlZIzPjHUGQg==",
+  "dgSpecHash": "iVqaUlDdXPGDW2kU8Etnn+YG3hwNqq1jr8nKDejlDr60Vw5WoQuethYxgp1x8vPXyzHTHp0hA/LgVxLUE1pcKA==",
   "success": true,
   "projectFilePath": "E:\\Estudos\\DotNet\\Asp.Net Identity\\WebApp_Security\\WebApp_UnderTheHood\\WebApp_UnderTheHood.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.fileproviders.abstractions\\2.2.0\\microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
