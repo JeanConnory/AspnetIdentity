@@ -1,3 +1,6 @@
+using Microsoft.AspNetCore.Authorization;
+using WebApp_UnderTheHood.Authorization;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -8,6 +11,7 @@ builder.Services.AddAuthentication("MyCookieAuth").AddCookie("MyCookieAuth", opt
     options.Cookie.Name = "MyCookieAuth";
     options.LoginPath = "/Account/Login";
     options.AccessDeniedPath = "/Account/AccessDenied";
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
 });
 
 builder.Services.AddAuthorization(options =>
@@ -21,8 +25,11 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("HRManagerOnly",
         policy => policy
         .RequireClaim("Department", "HR")
-        .RequireClaim("Manager"));
+        .RequireClaim("Manager")
+        .Requirements.Add(new HRManagerProbationRequirement(3)));
 });
+
+builder.Services.AddSingleton<IAuthorizationHandler, HRManagerProbationRequirementHandler>();
 
 var app = builder.Build();
 
