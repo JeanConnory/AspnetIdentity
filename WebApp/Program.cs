@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System.Data.Common;
 using WebApp.Data;
+using WebApp.Services;
+using WebApp.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,13 +23,20 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 			options.User.RequireUniqueEmail = true;
 			options.SignIn.RequireConfirmedEmail = true;
 		})
-	.AddEntityFrameworkStores<ApplicationDbContext>();
+	.AddEntityFrameworkStores<ApplicationDbContext>()
+	.AddDefaultTokenProviders();
+
+
 
 builder.Services.ConfigureApplicationCookie(options =>
 {
 	options.LoginPath = "/Account/Login";
 	options.AccessDeniedPath = "/Account/Denied"; ;
 });
+
+builder.Services.Configure<SmtpSetting>(builder.Configuration.GetSection("SMTP"));
+
+builder.Services.AddSingleton<IEmailService, EmailService>();
 
 // Add services to the container.
 builder.Services.AddRazorPages();
