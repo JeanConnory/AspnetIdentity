@@ -27,6 +27,7 @@ namespace WebApp_UnderTheHood.Pages
 			WeatherForecastItems = await InvokeEndPoint<List<WeatherForecastDTO>>("OurWebAPI", "WeatherForecast");
 		}
 
+		//Método pra colocar em outro canto pra ser reusado
 		private async Task<T> InvokeEndPoint<T>(string clientName, string url)
 		{
 			JwtToken token = null;

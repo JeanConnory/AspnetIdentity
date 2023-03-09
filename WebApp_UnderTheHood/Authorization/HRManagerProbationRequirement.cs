@@ -12,6 +12,7 @@ namespace WebApp_UnderTheHood.Authorization
 		public int ProbationMonths { get; }
 	}
 
+	//Fazer a mesma coisa na webAPI se quiser usar os Requirements
 	public class HRManagerProbationRequirementHandler : AuthorizationHandler<HRManagerProbationRequirement>
 	{
 		protected override Task HandleRequirementAsync(AuthorizationHandlerContext context, HRManagerProbationRequirement requirement)

@@ -46,7 +46,7 @@ namespace WebAPI.Controllers
 			return Unauthorized();
 		}
 
-		[NonAction]
+		[NonAction] //Erro no swagger se não colocar
 		public string CreateToken(IEnumerable<Claim> claims, DateTime expiresAt)
 		{
 			var secretKey = Encoding.ASCII.GetBytes(_configuration.GetValue<string>("SecretKey"));
